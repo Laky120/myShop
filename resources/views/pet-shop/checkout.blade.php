@@ -150,6 +150,7 @@ Checkout
                             </form>
                             </div>
                         </div>
+                        @if($orders !== 0)
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h5 class="panel-title"><span>2</span> <a data-toggle="collapse" data-parent="#faq" href="#payment-2">History of orders</a></h5>
@@ -209,6 +210,7 @@ Checkout
                                 </div>
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>

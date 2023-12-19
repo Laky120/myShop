@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Home
+About (in development)
 @endsection
 
 @section('styles')
@@ -11,7 +11,7 @@ Home
 <div class="breadcrumb-area pt-95 pb-95 bg-img" style="background-image:url(../../../public/img/banner/at20mist20tortora2025x70.jpg);">
     <div class="container">
         <div class="breadcrumb-content text-center">
-            <h2>About Us</h2>
+            <h2>About (in development)</h2>
             <ul>
                 <li><a href="{{route('pet-shop/index')}}">home</a></li>
                 <li class="active">About Us</li>

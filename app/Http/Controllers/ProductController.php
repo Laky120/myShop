@@ -61,8 +61,12 @@ class ProductController extends Controller
 
         $sum = \Cart::getTotal('price');
 
+        $randProducts = Product::query()->select()->inRandomOrder()->limit(4)->get();
+
         $product = Product::query()->where(['id' => $request->id])->get();
+
         return view('pet-shop/product-details', [
+            'randProducts' => $randProducts,
             'product' => $product,
             'cart' => $cart,
             'sum' => $sum,
@@ -156,9 +160,11 @@ class ProductController extends Controller
 
         $sum = \Cart::getTotal('price');
 
-        $user = Auth::user();
-
         $messageSuccessOrder = \session('successOrder');
+
+        $orders = 0;
+
+        if ($user = Auth::user()){
 
         $orders = Order::query()->where(['user_id' => $user->getAuthIdentifier()])
             ->orderBy('id', 'desc')
@@ -168,6 +174,7 @@ class ProductController extends Controller
             $order->cart_data = unserialize($order->cart_data);
             return $order;
         });
+        }
 
 
         if (!empty($messageSuccessOrder)) {

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Profile
+My account (in development)
 @endsection
 
 @section('styles')
@@ -11,7 +11,7 @@ Profile
 <div class="breadcrumb-area pt-95 pb-95 bg-img" style="background-image:url(../../../public/img/banner/at20mist20tortora2025x70.jpg);">
     <div class="container">
         <div class="breadcrumb-content text-center">
-            <h2>My Account</h2>
+            <h2>My Account (in development)</h2>
             <ul>
                 <li><a href="{{route('pet-shop/index')}}">home</a></li>
                 <li class="active">My Account</li>
@@ -116,49 +116,6 @@ Profile
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><span>3</span> <a data-toggle="collapse" data-parent="#faq" href="#my-account-3">Modify your address book entries   </a></h5>
-                            </div>
-                            <div id="my-account-3" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <div class="billing-information-wrapper">
-                                        <div class="account-info-wrapper">
-                                            <h4>Address Book Entries</h4>
-                                        </div>
-                                        <div class="entries-wrapper">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
-                                                    <div class="entries-info text-center">
-                                                        <p>Gerald Armstrong </p>
-                                                        <p> Address will go here. </p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
-                                                    <div class="entries-edit-delete text-center">
-                                                        <a class="edit" href="#">Edit</a>
-                                                        <a href="#">Delete</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="billing-back-btn">
-                                            <div class="billing-back">
-                                                <a href="#"><i class="ti-arrow-up"></i> back</a>
-                                            </div>
-                                            <div class="billing-btn">
-                                                <button type="submit">Continue</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h5 class="panel-title"><span>4</span> <a href="wishlist.html">Modify your wish list   </a></h5>
                             </div>
                         </div>
                         <form method="POST" action="{{ route('logout') }}">
